@@ -1,0 +1,349 @@
+// // Button SCSS Variables ò colors
+// $primary-color: #f18a46;
+// $primary-hover: #ee6f28;
+// $primary-active: #df5217;
+// $primary-focus: #b93d15;
+
+// $secondary-color: #f97316;
+// $secondary-hover: #ea580c;
+// $secondary-active: #c2410c;
+// $secondary-focus: rgba(249, 115, 22, 0.3);
+
+// $base-color: #3ac5c9;
+// $base-hover: #2ca4a8;
+// $base-active: #228387;
+// $base-focus: rgba(58, 197, 201, 0.3);
+
+// $danger-color: #ef4444;
+// $danger-hover: #dc2626;
+// $danger-active: #b91c1c;
+// $danger-focus: rgba(239, 68, 68, 0.3);
+
+// $success-color: #10b981;
+// $success-hover: #059669;
+// $success-active: #047857;
+// $success-focus: rgba(16, 185, 129, 0.3);
+
+// $disabled-color: #9ca3af;
+// $disabled-bg: #f3f4f6;
+// $disabled-border: #d1d5db;
+
+// // Base button styles
+// .custom-button {
+//   display: inline-flex;
+//   align-items: center;
+//   justify-content: center;
+//   border-radius: 0.375rem; // rounded-md
+//   padding: 1rem 1rem; // px-4 py-2
+//   font-weight: 500;
+//   font-size: 0.875rem; // text-sm
+//   line-height: 1.25rem;
+//   border: 1px solid transparent;
+//   cursor: pointer;
+//   transition: all 0.2s ease-in-out;
+//   text-decoration: none;
+//   position: relative;
+//   overflow: hidden;
+  
+//   // Remove default button styles
+//   background: none;
+//   outline: none;
+  
+//   // Focus styles
+//   &:focus {
+//     outline: none;
+//     box-shadow: 0 0 0 3px var(--focus-color);
+//   }
+  
+//   // Disabled styles
+//   &:disabled,
+//   &.disabled {
+//     cursor: not-allowed;
+//     opacity: 0.6;
+//     background-color: $disabled-bg !important;
+//     border-color: $disabled-border !important;
+//     color: $disabled-color !important;
+    
+//     &:hover {
+//       background-color: $disabled-bg !important;
+//       border-color: $disabled-border !important;
+//       transform: none !important;
+//     }
+//   }
+  
+//   // Loading state
+//   &.loading {
+//     cursor: wait;
+//     opacity: 0.8;
+//   }
+// }
+
+// // Button sizes
+// .custom-button {
+//   &.size-small {
+//     padding: 0.25rem 0.75rem; // px-3 py-1
+//     font-size: 0.75rem; // text-xs
+//     line-height: 1rem;
+//   }
+  
+//   &.size-medium {
+//     padding: 0.5rem 1rem; // px-4 py-2 (default)
+//     font-size: 0.875rem; // text-sm
+//   }
+  
+//   &.size-large {
+//     padding: 0.70rem 1.5rem; // px-6 py-3
+//     font-size: 1rem; // text-base
+//     line-height: 1.5rem;
+//   }
+// }
+
+// // Primary Button
+// .custom-button-primary {
+//   --focus-color: #{$primary-focus};
+//   background-color: $primary-color;
+//   border-color: $primary-color;
+//   color: white;
+  
+//   &:hover:not(:disabled):not(.disabled) {
+//     background-color: $primary-hover;
+//     border-color: $primary-hover;
+//     transform: translateY(-1px);
+//     box-shadow: 0 4px 12px rgba(217, 119, 6, 0.25);
+//   }
+  
+//   &:active:not(:disabled):not(.disabled) {
+//     background-color: $primary-active;
+//     border-color: $primary-active;
+//     transform: translateY(0);
+//     box-shadow: 0 2px 4px rgba(217, 119, 6, 0.25);
+//   }
+// }
+
+// // Secondary Button
+// .custom-button-secondary {
+//   --focus-color: #{$secondary-focus};
+//   background-color: $secondary-color;
+//   border-color: $secondary-color;
+//   color: white;
+  
+//   &:hover:not(:disabled):not(.disabled) {
+//     background-color: $secondary-hover;
+//     border-color: $secondary-hover;
+//     transform: translateY(-1px);
+//     box-shadow: 0 4px 12px rgba(249, 115, 22, 0.25);
+//   }
+  
+//   &:active:not(:disabled):not(.disabled) {
+//     background-color: $secondary-active;
+//     border-color: $secondary-active;
+//     transform: translateY(0);
+//     box-shadow: 0 2px 4px rgba(249, 115, 22, 0.25);
+//   }
+// }
+
+// // Base Button
+// .custom-button-base {
+//   --focus-color: #{$base-focus};
+//   background-color: $base-color;
+//   border-color: $base-color;
+//   color: white;
+  
+//   &:hover:not(:disabled):not(.disabled) {
+//     background-color: $base-hover;
+//     border-color: $base-hover;
+//     transform: translateY(-1px);
+//     box-shadow: 0 4px 12px rgba(58, 197, 201, 0.25);
+//   }
+  
+//   &:active:not(:disabled):not(.disabled) {
+//     background-color: $base-active;
+//     border-color: $base-active;
+//     transform: translateY(0);
+//     box-shadow: 0 2px 4px rgba(58, 197, 201, 0.25);
+//   }
+// }
+
+// // Danger Button
+// .custom-button-danger {
+//   --focus-color: #{$danger-focus};
+//   background-color: $danger-color;
+//   border-color: $danger-color;
+//   color: white;
+  
+//   &:hover:not(:disabled):not(.disabled) {
+//     background-color: $danger-hover;
+//     border-color: $danger-hover;
+//     transform: translateY(-1px);
+//     box-shadow: 0 4px 12px rgba(239, 68, 68, 0.25);
+//   }
+  
+//   &:active:not(:disabled):not(.disabled) {
+//     background-color: $danger-active;
+//     border-color: $danger-active;
+//     transform: translateY(0);
+//     box-shadow: 0 2px 4px rgba(239, 68, 68, 0.25);
+//   }
+// }
+
+// // Success Button
+// .custom-button-success {
+//   --focus-color: #{$success-focus};
+//   background-color: $success-color;
+//   border-color: $success-color;
+//   color: white;
+  
+//   &:hover:not(:disabled):not(.disabled) {
+//     background-color: $success-hover;
+//     border-color: $success-hover;
+//     transform: translateY(-1px);
+//     box-shadow: 0 4px 12px rgba(16, 185, 129, 0.25);
+//   }
+  
+//   &:active:not(:disabled):not(.disabled) {
+//     background-color: $success-active;
+//     border-color: $success-active;
+//     transform: translateY(0);
+//     box-shadow: 0 2px 4px rgba(16, 185, 129, 0.25);
+//   }
+// }
+
+// // Outline variants
+// .custom-button-outline {
+//   background-color: transparent;
+  
+//   &.custom-button-primary {
+//     color: $primary-color;
+//     border-color: $primary-color;
+    
+//     &:hover:not(:disabled):not(.disabled) {
+//       background-color: $primary-color;
+//       color: white;
+//     }
+//   }
+  
+//   &.custom-button-secondary {
+//     color: $secondary-color;
+//     border-color: $secondary-color;
+    
+//     &:hover:not(:disabled):not(.disabled) {
+//       background-color: $secondary-color;
+//       color: white;
+//     }
+//   }
+  
+//   &.custom-button-base {
+//     color: $base-color;
+//     border-color: $base-color;
+    
+//     &:hover:not(:disabled):not(.disabled) {
+//       background-color: $base-color;
+//       color: white;
+//     }
+//   }
+  
+//   &.custom-button-danger {
+//     color: $danger-color;
+//     border-color: $danger-color;
+    
+//     &:hover:not(:disabled):not(.disabled) {
+//       background-color: $danger-color;
+//       color: white;
+//     }
+//   }
+  
+//   &.custom-button-success {
+//     color: $success-color;
+//     border-color: $success-color;
+    
+//     &:hover:not(:disabled):not(.disabled) {
+//       background-color: $success-color;
+//       color: white;
+//     }
+//   }
+// }
+
+// // Ghost variant
+// .custom-button-ghost {
+//   background-color: transparent;
+//   border-color: transparent;
+  
+//   &.custom-button-primary {
+//     color: $primary-color;
+    
+//     &:hover:not(:disabled):not(.disabled) {
+//       background-color: rgba(217, 119, 6, 0.1);
+//     }
+//   }
+  
+//   &.custom-button-secondary {
+//     color: $secondary-color;
+    
+//     &:hover:not(:disabled):not(.disabled) {
+//       background-color: rgba(249, 115, 22, 0.1);
+//     }
+//   }
+  
+//   &.custom-button-base {
+//     color: $base-color;
+    
+//     &:hover:not(:disabled):not(.disabled) {
+//       background-color: rgba(58, 197, 201, 0.1);
+//     }
+//   }
+// }
+
+// // Button with icon
+// .custom-button-with-icon {
+//   .icon {
+//     margin-right: 0.5rem;
+    
+//     &:last-child {
+//       margin-right: 0;
+//       margin-left: 0.5rem;
+//     }
+    
+//     &:only-child {
+//       margin: 0;
+//     }
+//   }
+// }
+
+// // Full width button
+// .custom-button-block {
+//   width: 100%;
+//   display: flex;
+// }
+
+// // Button group
+// .custom-button-group {
+//   display: inline-flex;
+  
+//   .custom-button {
+//     border-radius: 0;
+    
+//     &:first-child {
+//       border-top-left-radius: 0.375rem;
+//       border-bottom-left-radius: 0.375rem;
+//     }
+    
+//     &:last-child {
+//       border-top-right-radius: 0.375rem;
+//       border-bottom-right-radius: 0.375rem;
+//     }
+    
+//     &:not(:first-child) {
+//       margin-left: -1px;
+//     }
+//   }
+// }
+
+// // Responsive adjustments
+// @media (max-width: 640px) {
+//   .custom-button {
+//     &.responsive {
+//       width: 100%;
+//       justify-content: center;
+//     }
+//   }
+// }
