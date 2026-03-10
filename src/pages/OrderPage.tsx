@@ -33,7 +33,7 @@ const STEP_ROUTES = [
   "/order/checkout",
 ];
 
-const Order = observer(() => {
+const OrderPage = observer(() => {
   const navigate = useNavigate();
   const location = useLocation();
   const [current, setCurrent] = useState(0);
@@ -81,4 +81,4 @@ const Order = observer(() => {
   );
 });
 
-export default Order;
+export default OrderPage;

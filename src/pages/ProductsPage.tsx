@@ -15,7 +15,7 @@ type Category = {
   name: string;
 };
 
-const Products = () => {
+const ProductsPage = () => {
   const [loading, setLoading] = useState(true);
   const [loadingProducts, setLoadingProducts] = useState(true);
   const [selectedKeys, setSelectedKeys] = useState<number>( 0);
@@ -121,4 +121,4 @@ const Products = () => {
   );
 };
 
-export default Products;
+export default ProductsPage;

@@ -45,7 +45,7 @@ interface Order {
   paymentMethod: string;
 }
 
-const Profile = observer(() => {
+const ProfilePage = observer(() => {
   const [activeTab, setActiveTab] = useState("1");
   const [orders, setOrders] = useState<Order[]>([]);
   const [isLoading, setIsLoading] = useState(false);
@@ -336,10 +336,10 @@ const Profile = observer(() => {
                               {user?.email}
                             </Descriptions.Item>
                             <Descriptions.Item label="Số điện thoại">
-                              {user?.phone ? user.phone : "N/A"}
+                              {user?.phone}
                             </Descriptions.Item>
                             <Descriptions.Item label="Địa chỉ">
-                              {user?.address || "N/A"}
+                              {user?.address || ""}
                             </Descriptions.Item>
                           </Descriptions>
                         )}
@@ -385,4 +385,4 @@ const Profile = observer(() => {
   );
 });
 
-export default Profile;
+export default ProfilePage;

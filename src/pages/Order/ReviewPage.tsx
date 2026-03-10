@@ -53,7 +53,7 @@ interface CartConfirmContext {
   setCurrent: (step: number) => void;
 }
 
-const Review = observer(() => {
+const ReviewPage = observer(() => {
   const { current, setCurrent } = useOutletContext<CartConfirmContext>();
   const [money, setMoney] = useState<ReviewResponse | null>(null);
   const [isLoading, setIsLoading] = useState(true);
@@ -523,4 +523,4 @@ const Review = observer(() => {
   );
 });
 
-export default Review;
+export default ReviewPage;

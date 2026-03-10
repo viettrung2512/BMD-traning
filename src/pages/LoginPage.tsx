@@ -28,7 +28,7 @@ import { userStore } from "../store/user.mobx";
 
 const { Title, Text } = Typography;
 
-const Login = () => {
+const LoginPage = () => {
   const { setCookie } = useCookie("access_token");
   const [loginError, setLoginError] = useState<string | null>(null);
   const [isLoading, setIsLoading] = useState<boolean>(false);
@@ -205,4 +205,4 @@ const Login = () => {
   );
 };
 
-export default Login;
+export default LoginPage;

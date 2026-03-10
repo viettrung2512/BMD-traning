@@ -39,7 +39,7 @@ const signupSchema = z.object({
 
 type SignupSchemaType = z.infer<typeof signupSchema>;
 
-const Register = () => {
+const RegisterPage = () => {
   const [isSuccess, setIsSuccess] = useState(false);
   const navigate = useNavigate();
 
@@ -253,4 +253,4 @@ const Register = () => {
   );
 };
 
-export default Register;
+export default RegisterPage;

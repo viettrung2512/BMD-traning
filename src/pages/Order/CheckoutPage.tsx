@@ -43,7 +43,7 @@ interface OrderData {
   moneyDiscountCoupon: number;
 }
 
-const Checkout = observer(() => {
+const CheckoutPage = observer(() => {
   const { current, setCurrent } = useOutletContext<CartConfirmContext>();
   const navigate = useNavigate();
   const [orderData, setOrderData] = useState<OrderData | null>(null);
@@ -305,4 +305,4 @@ const Checkout = observer(() => {
   );
 });
 
-export default Checkout;
+export default CheckoutPage;

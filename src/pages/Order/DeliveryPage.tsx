@@ -38,7 +38,7 @@ interface CartConfirmContext {
   setCurrent: (step: number) => void;
 }
 
-const Delivery = observer(() => {
+const DeliveryPage = observer(() => {
   const { current, setCurrent } = useOutletContext<CartConfirmContext>();
   const [form] = Form.useForm();
   const [selectedCityCode, setSelectedCityCode] = useState<number | null>(null);
@@ -369,17 +369,6 @@ const Delivery = observer(() => {
                 <Text type="secondary">Tạm tính</Text>
                 <Text strong>{toVND(subtotal)}</Text>
               </div>
-              {/* <div
-                style={{
-                  display: "flex",
-                  justifyContent: "space-between",
-                  marginBottom: "16px",
-                }}
-              >
-                <Text type="secondary">Giảm giá</Text>
-                <Text type="danger">{toVND(0)}</Text>
-              </div> */}
-
               <Divider />
 
               <div
@@ -431,4 +420,4 @@ const Delivery = observer(() => {
   );
 });
 
-export default Delivery;
+export default DeliveryPage;

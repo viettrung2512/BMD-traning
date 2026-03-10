@@ -34,7 +34,7 @@ interface CartConfirmContext {
   setCurrent: (step: number) => void;
 }
 
-const CartConfirm: React.FC = observer(() => {
+const CartConfirmPage: React.FC = observer(() => {
   const { current, setCurrent } = useOutletContext<CartConfirmContext>();
   const navigate = useNavigate();
 
@@ -204,4 +204,4 @@ const CartConfirm: React.FC = observer(() => {
   );
 });
 
-export default CartConfirm;
+export default CartConfirmPage;

@@ -43,7 +43,7 @@ const statusTranslation: Record<string, { label: string; color: string; step: nu
   CANCEL: { label: "Đã hủy", color: "red", step: -1 },
 };
 
-const DetailOrder = () => {
+const DetailOrderPage = () => {
   const { id } = useParams<{ id: string }>();
   const navigate = useNavigate();
   const [order, setOrder] = useState<Order>();
@@ -314,4 +314,4 @@ const DetailOrder = () => {
   );
 };
 
-export default DetailOrder;
+export default DetailOrderPage;
