@@ -21,43 +21,6 @@ const Outstanding = () => {
   const [sections, setSections] = useState<CategorySection[]>([]);
   const [loading, setLoading] = useState(true);
 
-  // useEffect(() => {
-  //   const mount = true;
-  //   const fetchProducts = async () => {
-  //     try {
-  //       const response = await getAllCategories();
-  //       const categories: Category[] =
-  //         response.data.productCategories || [];
-  //       // chayj api song song
-  //       const category = await Promise.all(
-  //         categories.map(async (category) => {
-  //           const products = await getAllProductsByCategory(
-  //             category.id,
-  //           );
-  //           const filter = filterProducts(
-  //             products.data.products || [],
-  //           );
-  //           return {
-  //             category,
-  //             products: filter,
-  //           };
-  //         }),
-  //       );
-  //       if (mount) {
-  //         setSections(
-  //           category.filter((section) => section.products.length > 0),
-  //         );
-  //       }
-  //     } catch (error) {
-  //       console.error("Error fetching outstanding products:", error);
-  //     } finally {
-  //       if (mount) {
-  //         setLoading(false);
-  //       }
-  //     }
-  //   };
-  //   fetchProducts();
-  // }, []);
 
   useEffect(() => {
     const fetchProducts = async () => {

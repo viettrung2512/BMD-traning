@@ -80,7 +80,7 @@ const DetailOrder = () => {
       const orderDetails = await getOrderById(order.id.toString());
       setOrder(orderDetails.data);
     } catch (error) {
-      message.error("Có lỗi xảy ra khi hủy đơn hàng");
+      console.error("Có lỗi xảy ra khi hủy đơn hàng");
     } finally {
       setCancelling(false);
       setConfirmCancel(false);
